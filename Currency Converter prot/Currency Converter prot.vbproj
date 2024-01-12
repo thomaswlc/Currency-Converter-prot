@@ -73,29 +73,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="MainPage.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="MainPage.Designer.vb">
+      <DependentUpon>MainPage.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.vb">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <Compile Include="Selection.Designer.vb">
+      <DependentUpon>Selection.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form2.vb">
+    <Compile Include="Selection.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="Program1.Designer.vb">
+      <DependentUpon>Program1.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form3.vb">
+    <Compile Include="Program1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="Program2.Designer.vb">
+      <DependentUpon>Program2.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form4.vb">
+    <Compile Include="Program2.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -115,14 +115,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.vb</DependentUpon>
+    <EmbeddedResource Include="Selection.resx">
+      <DependentUpon>Selection.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="Program1.resx">
+      <DependentUpon>Program1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program2.resx">
+      <DependentUpon>Program2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -148,6 +151,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\93634.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\936341.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\936342.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\936343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\936344.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\936345.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
