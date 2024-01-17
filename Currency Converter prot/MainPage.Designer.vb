@@ -53,13 +53,12 @@ Partial Class MainPage
         '
         'txtName
         '
-        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.ForeColor = System.Drawing.SystemColors.ControlDark
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.txtName.Location = New System.Drawing.Point(278, 321)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(245, 20)
         Me.txtName.TabIndex = 2
-        Me.txtName.Text = "Name..."
         '
         'PictureBox1
         '

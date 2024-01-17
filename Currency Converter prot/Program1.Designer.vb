@@ -30,13 +30,13 @@ Partial Class Program1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtAmount = New System.Windows.Forms.TextBox()
-        Me.btnConvert = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.lstTransactions = New System.Windows.Forms.ListBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Change = New System.Windows.Forms.Label()
         Me.btnBack = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnQuit = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -119,19 +119,11 @@ Partial Class Program1
         Me.txtAmount.Name = "txtAmount"
         Me.txtAmount.Size = New System.Drawing.Size(166, 20)
         Me.txtAmount.TabIndex = 14
-        '
-        'btnConvert
-        '
-        Me.btnConvert.Location = New System.Drawing.Point(690, 12)
-        Me.btnConvert.Name = "btnConvert"
-        Me.btnConvert.Size = New System.Drawing.Size(98, 37)
-        Me.btnConvert.TabIndex = 16
-        Me.btnConvert.Text = "Convert"
-        Me.btnConvert.UseVisualStyleBackColor = True
+        Me.txtAmount.Text = "0"
         '
         'btnSave
         '
-        Me.btnSave.Location = New System.Drawing.Point(690, 67)
+        Me.btnSave.Location = New System.Drawing.Point(690, 26)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(98, 37)
         Me.btnSave.TabIndex = 17
@@ -140,7 +132,7 @@ Partial Class Program1
         '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(690, 124)
+        Me.btnReset.Location = New System.Drawing.Point(690, 83)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(98, 37)
         Me.btnReset.TabIndex = 18
@@ -155,13 +147,14 @@ Partial Class Program1
         Me.lstTransactions.Size = New System.Drawing.Size(297, 264)
         Me.lstTransactions.TabIndex = 19
         '
-        'Label4
+        'Change
         '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(502, 99)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(166, 23)
-        Me.Label4.TabIndex = 20
+        Me.Change.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Change.Location = New System.Drawing.Point(502, 99)
+        Me.Change.Name = "Change"
+        Me.Change.Size = New System.Drawing.Size(166, 23)
+        Me.Change.TabIndex = 20
+        Me.Change.Text = "0"
         '
         'btnBack
         '
@@ -182,17 +175,26 @@ Partial Class Program1
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(322, 378)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(94, 60)
+        Me.btnQuit.TabIndex = 22
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        '
         'Program1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnBack)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Change)
         Me.Controls.Add(Me.lstTransactions)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnSave)
-        Me.Controls.Add(Me.btnConvert)
         Me.Controls.Add(Me.txtAmount)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -219,10 +221,10 @@ Partial Class Program1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtAmount As TextBox
-    Friend WithEvents btnConvert As Button
     Friend WithEvents btnSave As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents lstTransactions As ListBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Change As Label
     Friend WithEvents btnBack As Button
+    Friend WithEvents btnQuit As Button
 End Class

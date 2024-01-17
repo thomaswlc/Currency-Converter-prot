@@ -29,19 +29,21 @@ Partial Class Program2
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton7 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton8 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton9 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton10 = New System.Windows.Forms.RadioButton()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
+        Me.COP = New System.Windows.Forms.CheckBox()
+        Me.CNY = New System.Windows.Forms.CheckBox()
+        Me.EUR = New System.Windows.Forms.CheckBox()
+        Me.USD = New System.Windows.Forms.CheckBox()
+        Me.GBP = New System.Windows.Forms.CheckBox()
+        Me.COP2 = New System.Windows.Forms.CheckBox()
+        Me.CNY2 = New System.Windows.Forms.CheckBox()
+        Me.EUR2 = New System.Windows.Forms.CheckBox()
+        Me.USD2 = New System.Windows.Forms.CheckBox()
+        Me.GBP2 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -107,50 +109,6 @@ Partial Class Program2
         Me.Label2.TabIndex = 26
         Me.Label2.Text = "Amount:"
         '
-        'RadioButton4
-        '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(205, 170)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton4.TabIndex = 25
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "COP"
-        Me.RadioButton4.UseVisualStyleBackColor = True
-        '
-        'RadioButton3
-        '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(205, 138)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton3.TabIndex = 24
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "CNY"
-        Me.RadioButton3.UseVisualStyleBackColor = True
-        '
-        'RadioButton2
-        '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(205, 106)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(48, 17)
-        Me.RadioButton2.TabIndex = 23
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "EUR"
-        Me.RadioButton2.UseVisualStyleBackColor = True
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(205, 74)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(48, 17)
-        Me.RadioButton1.TabIndex = 22
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "USD"
-        Me.RadioButton1.UseVisualStyleBackColor = True
-        '
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -170,72 +128,6 @@ Partial Class Program2
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
-        'RadioButton5
-        '
-        Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(205, 45)
-        Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton5.TabIndex = 34
-        Me.RadioButton5.TabStop = True
-        Me.RadioButton5.Text = "GBP"
-        Me.RadioButton5.UseVisualStyleBackColor = True
-        '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(12, 48)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton6.TabIndex = 39
-        Me.RadioButton6.TabStop = True
-        Me.RadioButton6.Text = "GBP"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
-        'RadioButton7
-        '
-        Me.RadioButton7.AutoSize = True
-        Me.RadioButton7.Location = New System.Drawing.Point(12, 173)
-        Me.RadioButton7.Name = "RadioButton7"
-        Me.RadioButton7.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton7.TabIndex = 38
-        Me.RadioButton7.TabStop = True
-        Me.RadioButton7.Text = "COP"
-        Me.RadioButton7.UseVisualStyleBackColor = True
-        '
-        'RadioButton8
-        '
-        Me.RadioButton8.AutoSize = True
-        Me.RadioButton8.Location = New System.Drawing.Point(12, 141)
-        Me.RadioButton8.Name = "RadioButton8"
-        Me.RadioButton8.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton8.TabIndex = 37
-        Me.RadioButton8.TabStop = True
-        Me.RadioButton8.Text = "CNY"
-        Me.RadioButton8.UseVisualStyleBackColor = True
-        '
-        'RadioButton9
-        '
-        Me.RadioButton9.AutoSize = True
-        Me.RadioButton9.Location = New System.Drawing.Point(12, 109)
-        Me.RadioButton9.Name = "RadioButton9"
-        Me.RadioButton9.Size = New System.Drawing.Size(48, 17)
-        Me.RadioButton9.TabIndex = 36
-        Me.RadioButton9.TabStop = True
-        Me.RadioButton9.Text = "EUR"
-        Me.RadioButton9.UseVisualStyleBackColor = True
-        '
-        'RadioButton10
-        '
-        Me.RadioButton10.AutoSize = True
-        Me.RadioButton10.Location = New System.Drawing.Point(12, 77)
-        Me.RadioButton10.Name = "RadioButton10"
-        Me.RadioButton10.Size = New System.Drawing.Size(48, 17)
-        Me.RadioButton10.TabIndex = 35
-        Me.RadioButton10.TabStop = True
-        Me.RadioButton10.Text = "USD"
-        Me.RadioButton10.UseVisualStyleBackColor = True
-        '
         'Label4
         '
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -244,18 +136,142 @@ Partial Class Program2
         Me.Label4.Size = New System.Drawing.Size(166, 23)
         Me.Label4.TabIndex = 40
         '
+        'btnQuit
+        '
+        Me.btnQuit.Location = New System.Drawing.Point(327, 378)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(94, 60)
+        Me.btnQuit.TabIndex = 41
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
+        '
+        'btnBack
+        '
+        Me.btnBack.Image = Global.Currency_Converter_prot.My.Resources.Resources._936345
+        Me.btnBack.Location = New System.Drawing.Point(12, 5)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(34, 37)
+        Me.btnBack.TabIndex = 42
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
+        'COP
+        '
+        Me.COP.AutoSize = True
+        Me.COP.Location = New System.Drawing.Point(12, 153)
+        Me.COP.Name = "COP"
+        Me.COP.Size = New System.Drawing.Size(48, 17)
+        Me.COP.TabIndex = 52
+        Me.COP.Text = "COP"
+        Me.COP.UseVisualStyleBackColor = True
+        '
+        'CNY
+        '
+        Me.CNY.AutoSize = True
+        Me.CNY.Location = New System.Drawing.Point(12, 130)
+        Me.CNY.Name = "CNY"
+        Me.CNY.Size = New System.Drawing.Size(48, 17)
+        Me.CNY.TabIndex = 51
+        Me.CNY.Text = "CNY"
+        Me.CNY.UseVisualStyleBackColor = True
+        '
+        'EUR
+        '
+        Me.EUR.AutoSize = True
+        Me.EUR.Location = New System.Drawing.Point(12, 104)
+        Me.EUR.Name = "EUR"
+        Me.EUR.Size = New System.Drawing.Size(49, 17)
+        Me.EUR.TabIndex = 50
+        Me.EUR.Text = "EUR"
+        Me.EUR.UseVisualStyleBackColor = True
+        '
+        'USD
+        '
+        Me.USD.AutoSize = True
+        Me.USD.Location = New System.Drawing.Point(12, 78)
+        Me.USD.Name = "USD"
+        Me.USD.Size = New System.Drawing.Size(49, 17)
+        Me.USD.TabIndex = 49
+        Me.USD.Text = "USD"
+        Me.USD.UseVisualStyleBackColor = True
+        '
+        'GBP
+        '
+        Me.GBP.AutoSize = True
+        Me.GBP.Location = New System.Drawing.Point(12, 52)
+        Me.GBP.Name = "GBP"
+        Me.GBP.Size = New System.Drawing.Size(48, 17)
+        Me.GBP.TabIndex = 48
+        Me.GBP.Text = "GBP"
+        Me.GBP.UseVisualStyleBackColor = True
+        '
+        'COP2
+        '
+        Me.COP2.AutoSize = True
+        Me.COP2.Location = New System.Drawing.Point(210, 149)
+        Me.COP2.Name = "COP2"
+        Me.COP2.Size = New System.Drawing.Size(48, 17)
+        Me.COP2.TabIndex = 57
+        Me.COP2.Text = "COP"
+        Me.COP2.UseVisualStyleBackColor = True
+        '
+        'CNY2
+        '
+        Me.CNY2.AutoSize = True
+        Me.CNY2.Location = New System.Drawing.Point(210, 126)
+        Me.CNY2.Name = "CNY2"
+        Me.CNY2.Size = New System.Drawing.Size(48, 17)
+        Me.CNY2.TabIndex = 56
+        Me.CNY2.Text = "CNY"
+        Me.CNY2.UseVisualStyleBackColor = True
+        '
+        'EUR2
+        '
+        Me.EUR2.AutoSize = True
+        Me.EUR2.Location = New System.Drawing.Point(210, 100)
+        Me.EUR2.Name = "EUR2"
+        Me.EUR2.Size = New System.Drawing.Size(49, 17)
+        Me.EUR2.TabIndex = 55
+        Me.EUR2.Text = "EUR"
+        Me.EUR2.UseVisualStyleBackColor = True
+        '
+        'USD2
+        '
+        Me.USD2.AutoSize = True
+        Me.USD2.Location = New System.Drawing.Point(210, 74)
+        Me.USD2.Name = "USD2"
+        Me.USD2.Size = New System.Drawing.Size(49, 17)
+        Me.USD2.TabIndex = 54
+        Me.USD2.Text = "USD"
+        Me.USD2.UseVisualStyleBackColor = True
+        '
+        'GBP2
+        '
+        Me.GBP2.AutoSize = True
+        Me.GBP2.Location = New System.Drawing.Point(210, 48)
+        Me.GBP2.Name = "GBP2"
+        Me.GBP2.Size = New System.Drawing.Size(48, 17)
+        Me.GBP2.TabIndex = 53
+        Me.GBP2.Text = "GBP"
+        Me.GBP2.UseVisualStyleBackColor = True
+        '
         'Program2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.COP2)
+        Me.Controls.Add(Me.CNY2)
+        Me.Controls.Add(Me.EUR2)
+        Me.Controls.Add(Me.USD2)
+        Me.Controls.Add(Me.GBP2)
+        Me.Controls.Add(Me.COP)
+        Me.Controls.Add(Me.CNY)
+        Me.Controls.Add(Me.EUR)
+        Me.Controls.Add(Me.USD)
+        Me.Controls.Add(Me.GBP)
+        Me.Controls.Add(Me.btnBack)
+        Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.RadioButton6)
-        Me.Controls.Add(Me.RadioButton7)
-        Me.Controls.Add(Me.RadioButton8)
-        Me.Controls.Add(Me.RadioButton9)
-        Me.Controls.Add(Me.RadioButton10)
-        Me.Controls.Add(Me.RadioButton5)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -263,10 +279,6 @@ Partial Class Program2
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.RadioButton4)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Program2"
@@ -284,17 +296,19 @@ Partial Class Program2
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents RadioButton4 As RadioButton
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Public WithEvents RadioButton5 As RadioButton
-    Public WithEvents RadioButton6 As RadioButton
-    Friend WithEvents RadioButton7 As RadioButton
-    Friend WithEvents RadioButton8 As RadioButton
-    Friend WithEvents RadioButton9 As RadioButton
-    Friend WithEvents RadioButton10 As RadioButton
     Friend WithEvents Label4 As Label
+    Friend WithEvents btnQuit As Button
+    Friend WithEvents btnBack As Button
+    Friend WithEvents COP As CheckBox
+    Friend WithEvents CNY As CheckBox
+    Friend WithEvents EUR As CheckBox
+    Friend WithEvents USD As CheckBox
+    Friend WithEvents GBP As CheckBox
+    Friend WithEvents COP2 As CheckBox
+    Friend WithEvents CNY2 As CheckBox
+    Friend WithEvents EUR2 As CheckBox
+    Friend WithEvents USD2 As CheckBox
+    Friend WithEvents GBP2 As CheckBox
 End Class
