@@ -33,10 +33,10 @@ Partial Class Program1
         Me.btnBack = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnQuit = New System.Windows.Forms.Button()
-        Me.USD = New System.Windows.Forms.CheckBox()
-        Me.EUR = New System.Windows.Forms.CheckBox()
-        Me.CNY = New System.Windows.Forms.CheckBox()
-        Me.COP = New System.Windows.Forms.CheckBox()
+        Me.chcUSD = New System.Windows.Forms.CheckBox()
+        Me.chcEUR = New System.Windows.Forms.CheckBox()
+        Me.chcCNY = New System.Windows.Forms.CheckBox()
+        Me.chcCOP = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -140,55 +140,55 @@ Partial Class Program1
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'USD
+        'chcUSD
         '
-        Me.USD.AutoSize = True
-        Me.USD.Location = New System.Drawing.Point(208, 51)
-        Me.USD.Name = "USD"
-        Me.USD.Size = New System.Drawing.Size(49, 17)
-        Me.USD.TabIndex = 23
-        Me.USD.Text = "USD"
-        Me.USD.UseVisualStyleBackColor = True
+        Me.chcUSD.AutoSize = True
+        Me.chcUSD.Location = New System.Drawing.Point(208, 51)
+        Me.chcUSD.Name = "chcUSD"
+        Me.chcUSD.Size = New System.Drawing.Size(49, 17)
+        Me.chcUSD.TabIndex = 23
+        Me.chcUSD.Text = "USD"
+        Me.chcUSD.UseVisualStyleBackColor = True
         '
-        'EUR
+        'chcEUR
         '
-        Me.EUR.AutoSize = True
-        Me.EUR.Location = New System.Drawing.Point(208, 84)
-        Me.EUR.Name = "EUR"
-        Me.EUR.Size = New System.Drawing.Size(49, 17)
-        Me.EUR.TabIndex = 24
-        Me.EUR.Text = "EUR"
-        Me.EUR.UseVisualStyleBackColor = True
+        Me.chcEUR.AutoSize = True
+        Me.chcEUR.Location = New System.Drawing.Point(208, 84)
+        Me.chcEUR.Name = "chcEUR"
+        Me.chcEUR.Size = New System.Drawing.Size(49, 17)
+        Me.chcEUR.TabIndex = 24
+        Me.chcEUR.Text = "EUR"
+        Me.chcEUR.UseVisualStyleBackColor = True
         '
-        'CNY
+        'chcCNY
         '
-        Me.CNY.AutoSize = True
-        Me.CNY.Location = New System.Drawing.Point(208, 117)
-        Me.CNY.Name = "CNY"
-        Me.CNY.Size = New System.Drawing.Size(48, 17)
-        Me.CNY.TabIndex = 25
-        Me.CNY.Text = "CNY"
-        Me.CNY.UseVisualStyleBackColor = True
+        Me.chcCNY.AutoSize = True
+        Me.chcCNY.Location = New System.Drawing.Point(208, 117)
+        Me.chcCNY.Name = "chcCNY"
+        Me.chcCNY.Size = New System.Drawing.Size(48, 17)
+        Me.chcCNY.TabIndex = 25
+        Me.chcCNY.Text = "CNY"
+        Me.chcCNY.UseVisualStyleBackColor = True
         '
-        'COP
+        'chcCOP
         '
-        Me.COP.AutoSize = True
-        Me.COP.Location = New System.Drawing.Point(208, 150)
-        Me.COP.Name = "COP"
-        Me.COP.Size = New System.Drawing.Size(48, 17)
-        Me.COP.TabIndex = 26
-        Me.COP.Text = "COP"
-        Me.COP.UseVisualStyleBackColor = True
+        Me.chcCOP.AutoSize = True
+        Me.chcCOP.Location = New System.Drawing.Point(208, 150)
+        Me.chcCOP.Name = "chcCOP"
+        Me.chcCOP.Size = New System.Drawing.Size(48, 17)
+        Me.chcCOP.TabIndex = 26
+        Me.chcCOP.Text = "COP"
+        Me.chcCOP.UseVisualStyleBackColor = True
         '
         'Program1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.COP)
-        Me.Controls.Add(Me.CNY)
-        Me.Controls.Add(Me.EUR)
-        Me.Controls.Add(Me.USD)
+        Me.Controls.Add(Me.chcCOP)
+        Me.Controls.Add(Me.chcCNY)
+        Me.Controls.Add(Me.chcEUR)
+        Me.Controls.Add(Me.chcUSD)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Change)
@@ -219,8 +219,8 @@ Partial Class Program1
     Friend WithEvents Change As Label
     Friend WithEvents btnBack As Button
     Friend WithEvents btnQuit As Button
-    Friend WithEvents USD As CheckBox
-    Friend WithEvents EUR As CheckBox
-    Friend WithEvents CNY As CheckBox
-    Friend WithEvents COP As CheckBox
+    Friend WithEvents chcUSD As CheckBox
+    Friend WithEvents chcEUR As CheckBox
+    Friend WithEvents chcCNY As CheckBox
+    Friend WithEvents chcCOP As CheckBox
 End Class
