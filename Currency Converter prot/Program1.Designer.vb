@@ -23,10 +23,6 @@ Partial Class Program1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.USD = New System.Windows.Forms.RadioButton()
-        Me.EUR = New System.Windows.Forms.RadioButton()
-        Me.CNY = New System.Windows.Forms.RadioButton()
-        Me.COP = New System.Windows.Forms.RadioButton()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtAmount = New System.Windows.Forms.TextBox()
@@ -37,6 +33,10 @@ Partial Class Program1
         Me.btnBack = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnQuit = New System.Windows.Forms.Button()
+        Me.USD = New System.Windows.Forms.CheckBox()
+        Me.EUR = New System.Windows.Forms.CheckBox()
+        Me.CNY = New System.Windows.Forms.CheckBox()
+        Me.COP = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,50 +48,6 @@ Partial Class Program1
         Me.Label1.Size = New System.Drawing.Size(166, 23)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "GBP -----→ ANY"
-        '
-        'USD
-        '
-        Me.USD.AutoSize = True
-        Me.USD.Location = New System.Drawing.Point(209, 51)
-        Me.USD.Name = "USD"
-        Me.USD.Size = New System.Drawing.Size(48, 17)
-        Me.USD.TabIndex = 8
-        Me.USD.TabStop = True
-        Me.USD.Text = "USD"
-        Me.USD.UseVisualStyleBackColor = True
-        '
-        'EUR
-        '
-        Me.EUR.AutoSize = True
-        Me.EUR.Location = New System.Drawing.Point(209, 83)
-        Me.EUR.Name = "EUR"
-        Me.EUR.Size = New System.Drawing.Size(48, 17)
-        Me.EUR.TabIndex = 9
-        Me.EUR.TabStop = True
-        Me.EUR.Text = "EUR"
-        Me.EUR.UseVisualStyleBackColor = True
-        '
-        'CNY
-        '
-        Me.CNY.AutoSize = True
-        Me.CNY.Location = New System.Drawing.Point(209, 115)
-        Me.CNY.Name = "CNY"
-        Me.CNY.Size = New System.Drawing.Size(47, 17)
-        Me.CNY.TabIndex = 10
-        Me.CNY.TabStop = True
-        Me.CNY.Text = "CNY"
-        Me.CNY.UseVisualStyleBackColor = True
-        '
-        'COP
-        '
-        Me.COP.AutoSize = True
-        Me.COP.Location = New System.Drawing.Point(209, 147)
-        Me.COP.Name = "COP"
-        Me.COP.Size = New System.Drawing.Size(47, 17)
-        Me.COP.TabIndex = 11
-        Me.COP.TabStop = True
-        Me.COP.Text = "COP"
-        Me.COP.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -184,11 +140,55 @@ Partial Class Program1
         Me.btnQuit.Text = "Quit"
         Me.btnQuit.UseVisualStyleBackColor = True
         '
+        'USD
+        '
+        Me.USD.AutoSize = True
+        Me.USD.Location = New System.Drawing.Point(208, 51)
+        Me.USD.Name = "USD"
+        Me.USD.Size = New System.Drawing.Size(49, 17)
+        Me.USD.TabIndex = 23
+        Me.USD.Text = "USD"
+        Me.USD.UseVisualStyleBackColor = True
+        '
+        'EUR
+        '
+        Me.EUR.AutoSize = True
+        Me.EUR.Location = New System.Drawing.Point(208, 84)
+        Me.EUR.Name = "EUR"
+        Me.EUR.Size = New System.Drawing.Size(49, 17)
+        Me.EUR.TabIndex = 24
+        Me.EUR.Text = "EUR"
+        Me.EUR.UseVisualStyleBackColor = True
+        '
+        'CNY
+        '
+        Me.CNY.AutoSize = True
+        Me.CNY.Location = New System.Drawing.Point(208, 117)
+        Me.CNY.Name = "CNY"
+        Me.CNY.Size = New System.Drawing.Size(48, 17)
+        Me.CNY.TabIndex = 25
+        Me.CNY.Text = "CNY"
+        Me.CNY.UseVisualStyleBackColor = True
+        '
+        'COP
+        '
+        Me.COP.AutoSize = True
+        Me.COP.Location = New System.Drawing.Point(208, 150)
+        Me.COP.Name = "COP"
+        Me.COP.Size = New System.Drawing.Size(48, 17)
+        Me.COP.TabIndex = 26
+        Me.COP.Text = "COP"
+        Me.COP.UseVisualStyleBackColor = True
+        '
         'Program1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.COP)
+        Me.Controls.Add(Me.CNY)
+        Me.Controls.Add(Me.EUR)
+        Me.Controls.Add(Me.USD)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.Change)
@@ -198,10 +198,6 @@ Partial Class Program1
         Me.Controls.Add(Me.txtAmount)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.COP)
-        Me.Controls.Add(Me.CNY)
-        Me.Controls.Add(Me.EUR)
-        Me.Controls.Add(Me.USD)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Program1"
@@ -214,10 +210,6 @@ Partial Class Program1
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents USD As RadioButton
-    Friend WithEvents EUR As RadioButton
-    Friend WithEvents CNY As RadioButton
-    Friend WithEvents COP As RadioButton
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtAmount As TextBox
@@ -227,4 +219,8 @@ Partial Class Program1
     Friend WithEvents Change As Label
     Friend WithEvents btnBack As Button
     Friend WithEvents btnQuit As Button
+    Friend WithEvents USD As CheckBox
+    Friend WithEvents EUR As CheckBox
+    Friend WithEvents CNY As CheckBox
+    Friend WithEvents COP As CheckBox
 End Class
