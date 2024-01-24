@@ -22,72 +22,47 @@ Partial Class Program2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.lstTransactions = New System.Windows.Forms.ListBox()
+        Me.btnReset = New System.Windows.Forms.Button()
+        Me.txtAmount = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Change = New System.Windows.Forms.Label()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnBack = New System.Windows.Forms.Button()
-        Me.COP = New System.Windows.Forms.CheckBox()
-        Me.CNY = New System.Windows.Forms.CheckBox()
-        Me.EUR = New System.Windows.Forms.CheckBox()
-        Me.USD = New System.Windows.Forms.CheckBox()
-        Me.GBP = New System.Windows.Forms.CheckBox()
-        Me.COP2 = New System.Windows.Forms.CheckBox()
-        Me.CNY2 = New System.Windows.Forms.CheckBox()
-        Me.EUR2 = New System.Windows.Forms.CheckBox()
-        Me.USD2 = New System.Windows.Forms.CheckBox()
-        Me.GBP2 = New System.Windows.Forms.CheckBox()
+        Me.chcCOP = New System.Windows.Forms.CheckBox()
+        Me.chcCNY = New System.Windows.Forms.CheckBox()
+        Me.chcEUR = New System.Windows.Forms.CheckBox()
+        Me.chcUSD = New System.Windows.Forms.CheckBox()
+        Me.chcNGN = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstTransactions
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(491, 174)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(297, 264)
-        Me.ListBox1.TabIndex = 33
+        Me.lstTransactions.FormattingEnabled = True
+        Me.lstTransactions.Location = New System.Drawing.Point(491, 174)
+        Me.lstTransactions.Name = "lstTransactions"
+        Me.lstTransactions.Size = New System.Drawing.Size(297, 264)
+        Me.lstTransactions.TabIndex = 33
         '
-        'Button3
+        'btnReset
         '
-        Me.Button3.Location = New System.Drawing.Point(690, 124)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(98, 37)
-        Me.Button3.TabIndex = 32
-        Me.Button3.Text = "Reset"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnReset.Location = New System.Drawing.Point(690, 73)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(98, 37)
+        Me.btnReset.TabIndex = 32
+        Me.btnReset.Text = "Reset"
+        Me.btnReset.UseVisualStyleBackColor = True
         '
-        'Button2
+        'txtAmount
         '
-        Me.Button2.Location = New System.Drawing.Point(690, 67)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(98, 37)
-        Me.Button2.TabIndex = 31
-        Me.Button2.Text = "Save"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(690, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 37)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "Convert"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(501, 55)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(166, 20)
-        Me.TextBox1.TabIndex = 28
+        Me.txtAmount.Location = New System.Drawing.Point(501, 55)
+        Me.txtAmount.Name = "txtAmount"
+        Me.txtAmount.Size = New System.Drawing.Size(166, 20)
+        Me.txtAmount.TabIndex = 28
         '
         'Label3
         '
@@ -116,7 +91,7 @@ Partial Class Program2
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(166, 23)
         Me.Label1.TabIndex = 21
-        Me.Label1.Text = "ANY -----→ ANY"
+        Me.Label1.Text = "ANY -----→ GBP"
         '
         'PictureBox1
         '
@@ -128,13 +103,13 @@ Partial Class Program2
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
-        'Label4
+        'Change
         '
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(502, 96)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(166, 23)
-        Me.Label4.TabIndex = 40
+        Me.Change.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Change.Location = New System.Drawing.Point(502, 96)
+        Me.Change.Name = "Change"
+        Me.Change.Size = New System.Drawing.Size(166, 23)
+        Me.Change.TabIndex = 40
         '
         'btnQuit
         '
@@ -154,129 +129,72 @@ Partial Class Program2
         Me.btnBack.TabIndex = 42
         Me.btnBack.UseVisualStyleBackColor = True
         '
-        'COP
+        'chcCOP
         '
-        Me.COP.AutoSize = True
-        Me.COP.Location = New System.Drawing.Point(12, 153)
-        Me.COP.Name = "COP"
-        Me.COP.Size = New System.Drawing.Size(48, 17)
-        Me.COP.TabIndex = 52
-        Me.COP.Text = "COP"
-        Me.COP.UseVisualStyleBackColor = True
+        Me.chcCOP.AutoSize = True
+        Me.chcCOP.Location = New System.Drawing.Point(12, 121)
+        Me.chcCOP.Name = "chcCOP"
+        Me.chcCOP.Size = New System.Drawing.Size(48, 17)
+        Me.chcCOP.TabIndex = 52
+        Me.chcCOP.Text = "COP"
+        Me.chcCOP.UseVisualStyleBackColor = True
         '
-        'CNY
+        'chcCNY
         '
-        Me.CNY.AutoSize = True
-        Me.CNY.Location = New System.Drawing.Point(12, 130)
-        Me.CNY.Name = "CNY"
-        Me.CNY.Size = New System.Drawing.Size(48, 17)
-        Me.CNY.TabIndex = 51
-        Me.CNY.Text = "CNY"
-        Me.CNY.UseVisualStyleBackColor = True
+        Me.chcCNY.AutoSize = True
+        Me.chcCNY.Location = New System.Drawing.Point(12, 97)
+        Me.chcCNY.Name = "chcCNY"
+        Me.chcCNY.Size = New System.Drawing.Size(48, 17)
+        Me.chcCNY.TabIndex = 51
+        Me.chcCNY.Text = "CNY"
+        Me.chcCNY.UseVisualStyleBackColor = True
         '
-        'EUR
+        'chcEUR
         '
-        Me.EUR.AutoSize = True
-        Me.EUR.Location = New System.Drawing.Point(12, 104)
-        Me.EUR.Name = "EUR"
-        Me.EUR.Size = New System.Drawing.Size(49, 17)
-        Me.EUR.TabIndex = 50
-        Me.EUR.Text = "EUR"
-        Me.EUR.UseVisualStyleBackColor = True
+        Me.chcEUR.AutoSize = True
+        Me.chcEUR.Location = New System.Drawing.Point(12, 73)
+        Me.chcEUR.Name = "chcEUR"
+        Me.chcEUR.Size = New System.Drawing.Size(49, 17)
+        Me.chcEUR.TabIndex = 50
+        Me.chcEUR.Text = "EUR"
+        Me.chcEUR.UseVisualStyleBackColor = True
         '
-        'USD
+        'chcUSD
         '
-        Me.USD.AutoSize = True
-        Me.USD.Location = New System.Drawing.Point(12, 78)
-        Me.USD.Name = "USD"
-        Me.USD.Size = New System.Drawing.Size(49, 17)
-        Me.USD.TabIndex = 49
-        Me.USD.Text = "USD"
-        Me.USD.UseVisualStyleBackColor = True
+        Me.chcUSD.AutoSize = True
+        Me.chcUSD.Location = New System.Drawing.Point(12, 49)
+        Me.chcUSD.Name = "chcUSD"
+        Me.chcUSD.Size = New System.Drawing.Size(49, 17)
+        Me.chcUSD.TabIndex = 49
+        Me.chcUSD.Text = "USD"
+        Me.chcUSD.UseVisualStyleBackColor = True
         '
-        'GBP
+        'chcNGN
         '
-        Me.GBP.AutoSize = True
-        Me.GBP.Location = New System.Drawing.Point(12, 52)
-        Me.GBP.Name = "GBP"
-        Me.GBP.Size = New System.Drawing.Size(48, 17)
-        Me.GBP.TabIndex = 48
-        Me.GBP.Text = "GBP"
-        Me.GBP.UseVisualStyleBackColor = True
-        '
-        'COP2
-        '
-        Me.COP2.AutoSize = True
-        Me.COP2.Location = New System.Drawing.Point(210, 149)
-        Me.COP2.Name = "COP2"
-        Me.COP2.Size = New System.Drawing.Size(48, 17)
-        Me.COP2.TabIndex = 57
-        Me.COP2.Text = "COP"
-        Me.COP2.UseVisualStyleBackColor = True
-        '
-        'CNY2
-        '
-        Me.CNY2.AutoSize = True
-        Me.CNY2.Location = New System.Drawing.Point(210, 126)
-        Me.CNY2.Name = "CNY2"
-        Me.CNY2.Size = New System.Drawing.Size(48, 17)
-        Me.CNY2.TabIndex = 56
-        Me.CNY2.Text = "CNY"
-        Me.CNY2.UseVisualStyleBackColor = True
-        '
-        'EUR2
-        '
-        Me.EUR2.AutoSize = True
-        Me.EUR2.Location = New System.Drawing.Point(210, 100)
-        Me.EUR2.Name = "EUR2"
-        Me.EUR2.Size = New System.Drawing.Size(49, 17)
-        Me.EUR2.TabIndex = 55
-        Me.EUR2.Text = "EUR"
-        Me.EUR2.UseVisualStyleBackColor = True
-        '
-        'USD2
-        '
-        Me.USD2.AutoSize = True
-        Me.USD2.Location = New System.Drawing.Point(210, 74)
-        Me.USD2.Name = "USD2"
-        Me.USD2.Size = New System.Drawing.Size(49, 17)
-        Me.USD2.TabIndex = 54
-        Me.USD2.Text = "USD"
-        Me.USD2.UseVisualStyleBackColor = True
-        '
-        'GBP2
-        '
-        Me.GBP2.AutoSize = True
-        Me.GBP2.Location = New System.Drawing.Point(210, 48)
-        Me.GBP2.Name = "GBP2"
-        Me.GBP2.Size = New System.Drawing.Size(48, 17)
-        Me.GBP2.TabIndex = 53
-        Me.GBP2.Text = "GBP"
-        Me.GBP2.UseVisualStyleBackColor = True
+        Me.chcNGN.AutoSize = True
+        Me.chcNGN.Location = New System.Drawing.Point(12, 145)
+        Me.chcNGN.Name = "chcNGN"
+        Me.chcNGN.Size = New System.Drawing.Size(50, 17)
+        Me.chcNGN.TabIndex = 53
+        Me.chcNGN.Text = "NGN"
+        Me.chcNGN.UseVisualStyleBackColor = True
         '
         'Program2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.COP2)
-        Me.Controls.Add(Me.CNY2)
-        Me.Controls.Add(Me.EUR2)
-        Me.Controls.Add(Me.USD2)
-        Me.Controls.Add(Me.GBP2)
-        Me.Controls.Add(Me.COP)
-        Me.Controls.Add(Me.CNY)
-        Me.Controls.Add(Me.EUR)
-        Me.Controls.Add(Me.USD)
-        Me.Controls.Add(Me.GBP)
+        Me.Controls.Add(Me.chcNGN)
+        Me.Controls.Add(Me.chcCOP)
+        Me.Controls.Add(Me.chcCNY)
+        Me.Controls.Add(Me.chcEUR)
+        Me.Controls.Add(Me.chcUSD)
         Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Change)
+        Me.Controls.Add(Me.lstTransactions)
+        Me.Controls.Add(Me.btnReset)
+        Me.Controls.Add(Me.txtAmount)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -289,26 +207,19 @@ Partial Class Program2
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents lstTransactions As ListBox
+    Friend WithEvents btnReset As Button
+    Friend WithEvents txtAmount As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Change As Label
     Friend WithEvents btnQuit As Button
     Friend WithEvents btnBack As Button
-    Friend WithEvents COP As CheckBox
-    Friend WithEvents CNY As CheckBox
-    Friend WithEvents EUR As CheckBox
-    Friend WithEvents USD As CheckBox
-    Friend WithEvents GBP As CheckBox
-    Friend WithEvents COP2 As CheckBox
-    Friend WithEvents CNY2 As CheckBox
-    Friend WithEvents EUR2 As CheckBox
-    Friend WithEvents USD2 As CheckBox
-    Friend WithEvents GBP2 As CheckBox
+    Friend WithEvents chcCOP As CheckBox
+    Friend WithEvents chcCNY As CheckBox
+    Friend WithEvents chcEUR As CheckBox
+    Friend WithEvents chcUSD As CheckBox
+    Friend WithEvents chcNGN As CheckBox
 End Class

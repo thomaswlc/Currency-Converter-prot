@@ -26,7 +26,6 @@ Partial Class Program1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtAmount = New System.Windows.Forms.TextBox()
-        Me.btnSave = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.lstTransactions = New System.Windows.Forms.ListBox()
         Me.Change = New System.Windows.Forms.Label()
@@ -77,18 +76,9 @@ Partial Class Program1
         Me.txtAmount.TabIndex = 14
         Me.txtAmount.Text = "0"
         '
-        'btnSave
-        '
-        Me.btnSave.Location = New System.Drawing.Point(690, 26)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(98, 37)
-        Me.btnSave.TabIndex = 17
-        Me.btnSave.Text = "Save"
-        Me.btnSave.UseVisualStyleBackColor = True
-        '
         'btnReset
         '
-        Me.btnReset.Location = New System.Drawing.Point(690, 83)
+        Me.btnReset.Location = New System.Drawing.Point(690, 46)
         Me.btnReset.Name = "btnReset"
         Me.btnReset.Size = New System.Drawing.Size(98, 37)
         Me.btnReset.TabIndex = 18
@@ -194,7 +184,6 @@ Partial Class Program1
         Me.Controls.Add(Me.Change)
         Me.Controls.Add(Me.lstTransactions)
         Me.Controls.Add(Me.btnReset)
-        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtAmount)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -213,7 +202,6 @@ Partial Class Program1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents txtAmount As TextBox
-    Friend WithEvents btnSave As Button
     Friend WithEvents btnReset As Button
     Friend WithEvents lstTransactions As ListBox
     Friend WithEvents Change As Label
