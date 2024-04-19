@@ -88,9 +88,9 @@ Partial Class Program1
         'lstTransactions
         '
         Me.lstTransactions.FormattingEnabled = True
-        Me.lstTransactions.Location = New System.Drawing.Point(491, 174)
+        Me.lstTransactions.Location = New System.Drawing.Point(541, 174)
         Me.lstTransactions.Name = "lstTransactions"
-        Me.lstTransactions.Size = New System.Drawing.Size(297, 264)
+        Me.lstTransactions.Size = New System.Drawing.Size(247, 264)
         Me.lstTransactions.TabIndex = 19
         '
         'Change
